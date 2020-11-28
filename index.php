@@ -17,9 +17,6 @@ if (isset($_SESSION['cliente_id'])) {
     }
 }
 ?>
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -149,3 +146,5 @@ if (isset($_SESSION['cliente_id'])) {
 </body>
 
 </html>
+
+

@@ -14,7 +14,6 @@ if (isset($_SESSION['cliente_id'])) {
     }
 }
 ?>
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +41,12 @@ if (isset($_SESSION['cliente_id'])) {
                     <span><?= $cliente['nombre']; ?></span>
                     <div class="cliente__opciones">
                         <a href="/NUEVATIENDA/pages/perfil.php">Perfil</a>
+                        <?php if ($cliente['nombre'] == "administrador" ): ?>
+                            <a href="/NUEVATIENDA/pagesadmin/paneladmin.php">Ir a consola</a>
+                            <?php endif; ?>
                         <a href="/NUEVATIENDA/logout.php">Salir<i class="fas fa-sign-out-alt" style="font-size: 25px;"></i></a>
+
+                        
                     </div>
                 </li>
 
