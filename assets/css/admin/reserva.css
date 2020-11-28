@@ -9,6 +9,12 @@
     --verde-claro: #84ff5c;
 }
 
+.main {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
 .container {
     width: 100%;
     display: flex;

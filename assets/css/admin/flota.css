@@ -19,6 +19,12 @@
     --verde-claro: #84ff5c;
 }
 
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
 .container {
     width: 100%;
     display: flex;

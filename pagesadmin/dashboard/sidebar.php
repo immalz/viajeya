@@ -33,7 +33,7 @@ if (isset($_SESSION['cliente_id'])) {
 <body>
     <main>
         <!--BARRA LATERAL DE MENU -->
-        <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="dashboard navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="paneladmin.php">
                 <div class="sidebar-brand-icon">
                     <img src="/NUEVATIENDA/assets/img/user.png" style="width: 50px;">
@@ -58,19 +58,19 @@ if (isset($_SESSION['cliente_id'])) {
             <div class="sidebar-heading">Opciones</div>
 
             <li class="nav-item">
-                <a class="nav-link" href="/NUEVATIENDA/pages/reserva.php">
+                <a class="nav-link" href="/NUEVATIENDA/pagesadmin/reserva.php">
                     <i class="fas fa-history"></i>
                     <span>Reservas</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/NUEVATIENDA/pages/flota.php">
-                    <i class="fas fa-users-cog"></i>
+                <a class="nav-link" href="/NUEVATIENDA/pagesadmin/flota.php">
+                <i class="fas fa-car"></i>
                     <span>Flota</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/NUEVATIENDA/pages/usuarios.php">
-                    <i class="fas fa-users-cog"></i>
+                <a class="nav-link" href="/NUEVATIENDA/pagesadmin/usuarios.php">
+                <i class="fas fa-users"></i>
                     <span>Usuarios</span></a>
             </li>
 

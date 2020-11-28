@@ -40,6 +40,10 @@ html {
     -webkit-tap-highlight-color: transparent
 }
 
+.dashboard {
+    min-height: 100vh !important;
+}
+
 article,
 aside,
 figcaption,
