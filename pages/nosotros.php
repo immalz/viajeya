@@ -1,3 +1,23 @@
+<?php
+session_start();
+require '../database.php';
+
+if (isset($_SESSION['cliente_id'])) {
+    $records = $conn->prepare('SELECT id, nombre, correo, contraseña from clientes WHERE id= :id');
+    $records->bindParam(':id', $_SESSION['cliente_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $cliente = null;
+
+    if (count($results) > 0) {
+        $cliente = $results;
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +27,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="/NUEVATIENDA/assets/css/navbar.css">
-    <link rel="stylesheet" href="/NUEVATIENDA/assets/css/footer.css">
+    <link rel="stylesheet" href="/NUEVATIENDA/assets/css/footerauser.css">
     <link rel="stylesheet" href="/NUEVATIENDA/assets/css/general.css">
 </head>
 

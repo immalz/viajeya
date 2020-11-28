@@ -30,7 +30,7 @@
 <link rel="stylesheet" href="assets/css/logins.css">
 <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/footerauser.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <input type="text" name="email" placeholder="Ingrese correo electronico...">
             <input type="password" name="password" placeholder="Ingresar contraseña...">
             <input type="password" name="confirm_password" placeholder="Confirmar contraseña...">
-            <input type="submit" value="Acceder"></input>
+            <input type="submit" value="Registrarse"></input>
         </form>
 
     </main>
