@@ -1,0 +1,192 @@
+:root {
+    --blanco: #fff;
+    --gris: #f7f4f4;
+    --negro: #000;
+    --amarillo: #fee648;
+    --rojo: #fc5c65;
+    --rojo-fuerte: #fa1c28;
+    --verde: #00ff4c;
+    --verde-claro: #84ff5c;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.filtrar-reserva {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--rojo);
+    margin: 30px 0;
+}
+
+.reserva {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: var(--gris);
+    transition: .4s ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta__imagen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.tarjeta__imagen img {
+    width: 100%;
+    height: 60%;
+    transition: .7s ease;
+}
+
+.tarjeta__imagen img:hover {
+    transform: scale(1.2);
+}
+
+.tarjeta__descripcion {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.tarjeta__descripcion h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--rojo);
+}
+
+.tarjeta__descripcion p {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 50px;
+    font-size: 16px;
+    color: var(--gris-claro);
+    background: var(--rojo);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+button a {
+    color: var(--blanco);
+}
+
+button:hover {
+    background: var(--rojo-fuerte);
+    transform: scale(1.1);
+}
+
+.filtrar-reserva h2 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--rojo);
+}
+
+.filtrar-reserva form {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.filtrar-reserva form img {
+    width: 80px;
+    margin: auto;
+}
+
+.filtrar-reserva form input {
+    margin: 10px 0;
+    padding: 10px;
+    background: var(--gris-claro);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #686868;
+    font-weight: 300;
+    border-radius: 7px;
+}
+
+.filtrar-reserva form input,
+select {
+    background: var(--gris-claro);
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #686868;
+    font-weight: 300;
+    border-radius: 7px;
+}
+
+.filtrar-reserva form input[type="submit"] {
+    width: 80%;
+    padding: 10px 0;
+    margin: auto;
+    color: white;
+    background: var(--verde);
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,124 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#terminos {
+    text-decoration: underline;
+    color: #000;
+}
+
+.centro {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin: auto;
+    text-align: justify;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../img/bacground.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.centro::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.35)
+}
+
+.formulario {
+    position: relative;
+    width: 70%;
+    min-height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario form {
+    padding: 30px 40px;
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0.1, 1);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__derecho,
+.formulario__izquierdo {
+    width: 50%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form input {
+    padding: 0 20px;
+}
+
+.formulario form input[type="text"],
+.formulario form input[type="date"],
+.formulario form input[type="email"],
+.formulario form input[type="number"],
+.formulario form select {
+    width: 90%;
+}
+
+.formulario form input[type="submit"] {
+    background: #fc5c65;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.formulario__izquierdo .horas {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.horas .horas__derecha,
+.horas .horas__izquierda {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.horas .horas__derecha input,
+.horas .horas__izquierda input {
+    width: 100%;
+}
+
+.formulario form input,
+select {
+    background: var(--gris-claro);
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #686868;
+    font-weight: 300;
+}
+
+.formulario form p {
+    font-size: 14px;
+    margin-top: 10px;
+}
