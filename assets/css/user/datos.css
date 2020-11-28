@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+}
+
+.main h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main .encabezado {
+    width: 100%;
+}
+
+.main .encabezado .resumen {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-direction: column;
+}
+
+.main .encabezado .imagen {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

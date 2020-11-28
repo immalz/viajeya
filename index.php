@@ -5,7 +5,7 @@ session_start();
 require 'database.php';
 
 if (isset($_SESSION['cliente_id'])) {
-    $records = $conn->prepare('SELECT id, nombre, correo, contraseña from clientes WHERE id= :id');
+    $records = $conn->prepare('SELECT id, nombre, correo, celular, telefono, direccion, imagen, contraseña from clientes WHERE id= :id');
     $records->bindParam(':id', $_SESSION['cliente_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -16,6 +16,7 @@ if (isset($_SESSION['cliente_id'])) {
         $cliente = $results;
     }
 }
+?>
 
 ?>
 
